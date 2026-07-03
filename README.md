@@ -8,13 +8,12 @@
 
 | Secret 名称         | 是否必填 | 说明                                              |
 |---------------------|----------|---------------------------------------------------|
-| USERNAME           | ✅ 必填  | Bot-hosting 用户名，cookie里获取                       |
-| USER_ID            | ✅ 必填  | Bot-hosting 用户ID，cookie里获取                       | 
+| EMAIL              | ❌ 可选  | 用于通知使用的Email,可随意填写                          |
 | SESSION_TOKEN      | ✅ 必填  | Bot-hosting session_token，cookie里获取               |
 | GH_TOKEN           | ✅ 必填  | GitHub(classic) toekn,用于自动更新session_token,以ghp_xxx开头|
-| NODE_LINK          | ❌ 可选  | 代理链接（需包含协议，如 socks5:// vless:// trojan://)   |
-| TG_BOT_TOKEN       | ❌ 可选  | Telegram Bot Token（用于发送通知）                     |
-| TG_CHAT_ID         | ❌ 可选  | Telegram Chat ID（接收通知的用户或群组 ID）              |
+| NODE_LINK          | ❌ 可选  | 代理链接（需包含协议，如 socks5:// vless:// trojan:// )   |
+| TG_BOT_TOKEN       | ❌ 可选  | Telegram Bot Token（用于发送通知）                      |
+| TG_CHAT_ID         | ❌ 可选  | Telegram Chat ID（接收通知的用户或群组 ID）               |
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
