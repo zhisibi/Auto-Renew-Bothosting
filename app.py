@@ -390,11 +390,11 @@ def main():
             current_title = sb.get_title()
             print(f"📝 当前URL: {current_url}, Title: {current_title}")
 
-            if current_title == "Bot-Hosting.net | A Free Host For Discord Bots" and current_url == "https://bot-hosting.net/a/billings":
+            if "/a/billings" in current_url and "/login" not in current_url and "error=" not in current_url:
                 login_ok = True
-                print("✅ SESSION_TOKEN 登录成功,当前已到达账单页")
+                print("✅ SESSION_TOKEN 登录成功, 当前已到达账单页")
             else:
-                print(f"❌ SESSION_TOKEN 登录失败，当前标题: {current_title}")
+                print(f"❌ SESSION_TOKEN 登录失败，当前URL: {current_url}, 当前标题: {current_title}")
 
         # 方式2: Discord OAuth 登录（备用）
         if not login_ok and DC_TOKEN:
@@ -409,7 +409,7 @@ def main():
                 current_title = sb.get_title()
                 print(f"📝 当前URL: {current_url}, Title: {current_title}")
 
-                if current_title == "Bot-Hosting.net | A Free Host For Discord Bots" and current_url == "https://bot-hosting.net/a/billings":
+                if "a/billings" in current_url:
                     login_ok = True
                     print("✅ Discord OAuth 登录成功,当前已到达账单页")
                 else:
